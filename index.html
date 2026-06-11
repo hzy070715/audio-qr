@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Audio</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: Arial, sans-serif;
+      background: #f6f7f9;
+      color: #202124;
+    }
+
+    main {
+      width: min(92vw, 520px);
+      padding: 28px;
+      box-sizing: border-box;
+      background: #fff;
+      border: 1px solid #d8dde5;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(20, 24, 31, .08);
+    }
+
+    audio {
+      width: 100%;
+      display: block;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #16181c;
+      }
+
+      main {
+        background: #20242a;
+        border-color: #363b44;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <audio controls autoplay src="voice.mp3"></audio>
+  </main>
+</body>
+</html>
